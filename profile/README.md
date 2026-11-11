@@ -26,11 +26,11 @@ All builds are on the [Klipeo releases page](https://github.com/Klipeo-org/klipe
 ## How it is built
 
 - Web app and API: Next.js 16 and React 19 on Vercel.
-- Database: PostgreSQL with Drizzle ORM. Staging runs on Neon; production runs on AWS RDS.
+- Database: PostgreSQL with Drizzle ORM on Neon, for both staging and production.
 - Media: Cloudflare R2 for large uploads and the media library, with Appwrite for small uploads.
 - Background work: Cloudflare Workers for event streaming, scheduling, and library thumbnails,
-  and Cloudflare Containers for scene detection and short video processing. Production hosted
-  agents and media workers run on AWS.
+  and Cloudflare Containers for the hosted agent, scene detection, and short video processing.
+  Media workers run on AWS.
 - Mac app: SwiftUI. Android app: Expo and React Native. Chrome extension: WXT.
 
 ## Links
